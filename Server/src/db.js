@@ -17,10 +17,15 @@ const {
 //   throw new Error("DATABASE_URL not defined");
 // }
 
-const sequelize = new Sequelize(DATABASE_URL, {
-  logging: false,
-  native: false,
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, {
+  logging: false, 
+  native: false, 
 });
+
+//const sequelize = new Sequelize(DATABASE_URL, {
+  //logging: false,
+  //native: false,
+//});
 sequelize
   .authenticate()
   .then(() => {
