@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js",
+    "start": "node index.js",
     "install-prod": "npm install --only=prod"
   },
   "keywords": [],
