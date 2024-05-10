@@ -26,14 +26,14 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
   //logging: false,
   //native: false,
 //});
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Conexión exitosa');
-  })
-  .catch((err) => {
-    console.error('Error al conectar:', err);
-  });
+//sequelize
+  //.authenticate()
+  //.then(() => {
+   // console.log('Conexión exitosa');
+ // })
+ // .catch((err) => {
+ //   console.error('Error al conectar:', err);
+ // });
 
 // Opcional: Manejo de eventos para errores durante la sincronización de modelos
 /* sequelize
