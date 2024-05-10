@@ -5,7 +5,7 @@ const { apiLoaderProducts } = require("./src/apiLoaderProducts.js");
 const { createAdmin } = require("./src/createAdmin.js");
 const cloudinary = require("cloudinary").v2;
 
-const PORT = process.env.PORT || 3001;
+const {PORT} = process.env;
 
 const app = express();
 
