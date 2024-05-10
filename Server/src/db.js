@@ -3,8 +3,12 @@ const { Sequelize } = require("sequelize");
 
 const fs = require("fs");
 const path = require("path");
- const { DATABASE_URL } = process.env;
+// const { DATABASE_URL } = process.env;
 //const { DATABASE_URL } = process.env;
+
+const {
+  DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT
+} = process.env;
 
 //if (!DATABASE_URL) {
 //throw new Error("DATABASE_URL not defined");
